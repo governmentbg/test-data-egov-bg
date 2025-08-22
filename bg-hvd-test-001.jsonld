@@ -1,5 +1,5 @@
 {
-  "@context": "https://.../bg-hvd-test-001.jsonld",
+  "@context": "https://github.com/governmentbg/test-data-egov-bg/blob/main/bg-hvd-test-001.jsonld",
   "@type": "dcat:Dataset",
   "dct:identifier": "BG-HVD-001",
   "dct:title": "Качеството на атмосферния въздух",
