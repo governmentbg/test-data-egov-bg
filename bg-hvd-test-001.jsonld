@@ -3,8 +3,11 @@
   "@type": "dcat:Dataset",
   "dct:identifier": "BG-HVD-001",
   "dct:title": "Качеството на атмосферния въздух",
-  "dct:description": "Данни от Националната система за контрол на качеството на атмосферния въздух в реално време",
-  "dct:publisher": "Изпълнителна агенция по околна среда",
+  "dct:description": "Данни от Националната система за контрол на качеството на атмосферния въздух в реално време",  
+  "dct:publisher": { 
+    "@type": "foaf:Agent",
+    "foaf:name": "Изпълнителна агенция по околна среда"
+  },
   "dcat:contactPoint": "iaos@eea.government.bg",
   "dct:issued": "2025-03-31",
   "dct:modified": "2025-06-30",
