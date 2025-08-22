@@ -1,28 +1,85 @@
 {
-  "@context": "https://github.com/governmentbg/test-data-egov-bg/blob/main/bg-hvd-test-001.jsonld",
-  "@type": "dcat:Dataset",
-  "dct:identifier": "BG-HVD-001",
-  "dct:title": "Качеството на атмосферния въздух",
-  "dct:description": "Данни от Националната система за контрол на качеството на атмосферния въздух в реално време",  
-  "dct:publisher": { 
-    "@type": "foaf:Agent",
-    "foaf:name": "Изпълнителна агенция по околна среда"
+  "@context": {
+    "dcat": "https://github.com/governmentbg/test-data-egov-bg/blob/main/bg-hvd-test-001.jsonld"
   },
-  "dcat:contactPoint": "iaos@eea.government.bg",
-  "dct:issued": "2025-03-31",
-  "dct:modified": "2025-06-30",
-  "dcat:keyword": "населено място, норма за озон, превишение, концентрация",
-  "dct:language": "bg",
-  "dct:spatial": "България",
-  "dct:temporal": "",
-  "dcat:theme": "http://eurovoc.europa.eu/100141",
-  "dct:format": "application/json, application/xml, text/csv",
-  "dcat:accessURL": "https://data.egov.bg/organisation/e3d162cf-10ab-4808-a065-cd5380fbafca/datasets",
-  "dcat:downloadURL": "",
-  "dcat:endpointURL": "",
-  "dct:license": "https://creativecommons.org/licenses/by/4.0/",
-  "dct:accessRights": "PUBLIC",
-  "dct:conformsTo": "",
-  "dct:type": "Dataset",
-  "dct:isHighValue": true
+  "@graph": [
+    {
+      "@id": "https://data.egov.bg/dataset/municipal-boundaries-hvd",
+      "@type": "dcat:Dataset",
+      "dct:title": {
+        "@value": "Качеството на атмосферния въздух (HVD)",
+        "@language": "bg"
+      },
+      "dct:description": {
+        "@value": "Данни от Националната система за контрол на качеството на атмосферния въздух в реално време.",
+        "@language": "bg"
+      },
+      "dct:identifier": "BG-HVD-001",
+      "dct:issued": {
+        "@value": "2025-03-31",
+        "@type": "xsd:date"
+      },
+      "dct:modified": {
+        "@value": "2025-06-30",
+        "@type": "xsd:date"
+      },
+      "dct:publisher": {
+        "@id": "https://egov.bg/organizations/meu"
+      },
+      "dcat:theme": {
+        "@id": "http://eurovoc.europa.eu/100142"
+      },
+      "dcat:keyword": [
+        {
+          "@value": "населено място",
+          "@language": "bg"
+        },
+        {
+          "@value": "норма за озон",
+          "@language": "bg"
+        },
+        {
+          "@value": "превишение",
+          "@language": "bg"
+        },
+        {
+          "@value": "концентрация",
+          "@language": "bg"
+        }
+      ],
+      "dct:language": {
+        "@id": "http://publications.europa.eu/resource/authority/language/BUL"
+      },
+      "dct:spatial": {
+        "@id": "http://publications.europa.eu/resource/authority/country/BGR"
+      },
+      "dct:accessRights": {
+        "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+      },
+      "dct:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dct:contactPoint": {
+        "@id": "iaos@eea.government.bg"
+      },
+      "dcat:accessURL": {
+        "@id": "https://data.egov.bg/organisation/e3d162cf-10ab-4808-a065-cd5380fbafca/datasets"
+      },
+      "dcat:distribution": {
+        "@id": "https://data.egov.bg/dataset/municipal-boundaries-hvd/distribution/geojson"
+      },
+ 
+      "dct:format": [
+	    {
+		  "@value": "application/json"
+		},
+	    {
+		  "@value": "application/xml"
+		},
+	    {
+		  "@value": "text/csv"
+		}
+	  ]
+    }
+  ]
 }
